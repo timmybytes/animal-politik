@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AuthContext from '../stores/authContext';
 
 export default function Navbar() {
-  const { user, login, logout } = useContext(AuthContext);
+  const { user, login, logout, authReady } = useContext(AuthContext);
   console.log(user);
 
   return (
@@ -23,12 +23,21 @@ export default function Navbar() {
               <a>Guides</a>
             </Link>
           </li>
-          <li className='btn' onClick={login}>
-            Login/Signup
-          </li>
-          <li className='btn' onClick={logout}>
-            Logout
-          </li>
+          {authReady && (
+            <>
+              {!user && (
+                <li className='btn' onClick={login}>
+                  Login/Signup
+                </li>
+              )}
+              {user && <li>{user.email}</li>}
+              {user && (
+                <li className='btn' onClick={logout}>
+                  Logout
+                </li>
+              )}
+            </>
+          )}
         </ul>
       </nav>
       <div className='banner'>
