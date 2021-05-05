@@ -9,8 +9,20 @@ export default function Navbar() {
   return (
     <div className='container'>
       <nav>
-        <Image src='/rupee.png' width={50} height={48} />
-        <h1>Gaming Vibes</h1>
+        <h1>
+          <Link href='/'>
+            <a>
+              {/* <Image */}
+              <img
+                className='logo'
+                src='/SkinnyVector.svg'
+                // width={500}
+                // height={50}
+                alt='Animal Politik logo'
+              />
+            </a>
+          </Link>
+        </h1>
         <ul>
           <li>
             <Link href='/'>
@@ -19,9 +31,10 @@ export default function Navbar() {
           </li>
           <li>
             <Link href='/guides'>
-              <a>Guides</a>
+              <a>Members Only</a>
             </Link>
           </li>
+          {/* NOTE: Comment out and reload site during development for authReady-dependent code to load, then enter the Netlify site URL into the login modal.  */}
           {authReady && (
             <>
               {!user && (
@@ -29,7 +42,11 @@ export default function Navbar() {
                   Login/Signup
                 </li>
               )}
-              {user && <li>{user.email}</li>}
+              {user && (
+                <li>
+                  <strong>{user.user_metadata.full_name}</strong>
+                </li>
+              )}
               {user && (
                 <li className='btn' onClick={logout}>
                   Logout
@@ -39,9 +56,9 @@ export default function Navbar() {
           )}
         </ul>
       </nav>
-      <div className='banner'>
+      {/* <div className='banner'>
         <Image src='/banner.png' width={966} height={276} />
-      </div>
+      </div> */}
     </div>
   );
 }
