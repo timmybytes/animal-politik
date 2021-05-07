@@ -2,27 +2,23 @@ import { useContext } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import AuthContext from '../stores/authContext';
+import styles from '../styles/Navbar.module.scss';
 
 export default function Navbar() {
   const { user, login, logout, authReady } = useContext(AuthContext);
 
   return (
-    <div className='container'>
-      <nav>
-        <h1>
-          <Link href='/'>
-            <a>
-              {/* <Image */}
-              <img
-                className='logo'
-                src='/SkinnyVector.svg'
-                // width={500}
-                // height={50}
-                alt='Animal Politik logo'
-              />
-            </a>
-          </Link>
-        </h1>
+    <div className={styles.container}>
+      <nav className={styles.nav}>
+        <Link href='/'>
+          <a>
+            <img
+              className={styles.logo}
+              src='/SkinnyRedVector.svg'
+              alt='Animal Politik logo'
+            />
+          </a>
+        </Link>
         <ul>
           <li>
             <Link href='/'>
@@ -30,7 +26,17 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href='/guides'>
+            <Link href='/about'>
+              <a>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/store'>
+              <a>Store</a>
+            </Link>
+          </li>
+          <li>
+            <Link href='/members'>
               <a>Members Only</a>
             </Link>
           </li>
@@ -38,7 +44,7 @@ export default function Navbar() {
           {authReady && (
             <>
               {!user && (
-                <li className='btn' onClick={login}>
+                <li className={styles.btn} onClick={login}>
                   Login/Signup
                 </li>
               )}
@@ -48,17 +54,17 @@ export default function Navbar() {
                 </li>
               )}
               {user && (
-                <li className='btn' onClick={logout}>
+                <li className={styles.btn} onClick={logout}>
                   Logout
                 </li>
               )}
             </>
           )}
         </ul>
-      </nav>
-      {/* <div className='banner'>
+        {/* <div className='banner'>
         <Image src='/banner.png' width={966} height={276} />
       </div> */}
+      </nav>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+.home {
+  max-width: 760px;
+  margin: 40px auto;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+
+  h2 {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    @media screen and (max-width: 600px) {
+      font-size: initial;
+    }
+  }
+}

@@ -1,6 +1,9 @@
-.home {
+.about {
   max-width: 760px;
   margin: 40px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
+  h1 {
+    line-height: initial;
+  }
 }

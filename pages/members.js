@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from 'react';
-import styles from '../styles/Guides.module.css';
+import styles from '../styles/Members.module.scss';
 import AuthContext from '../stores/authContext';
 
 export default function Guides() {
@@ -33,7 +33,7 @@ export default function Guides() {
   }, [user, authReady]);
 
   return (
-    <div className={styles.guides}>
+    <div className={styles.members}>
       {!authReady && <div>Loading...</div>}
       {error && (
         <div className={styles.error}>

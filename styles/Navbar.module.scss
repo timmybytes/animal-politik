@@ -1,0 +1,51 @@
+@use './colors.scss' as *;
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.nav {
+  margin: 20px auto 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (max-width: 812px) {
+    flex-direction: column;
+  }
+
+  h1 {
+    margin-left: 10px;
+  }
+
+  .logo {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
+
+  ul {
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      margin: 5px 5px 5px 16px;
+    }
+
+    li.btn {
+      padding: 5px 8px;
+      border: 2px solid $primary-blue;
+      border-radius: 5px;
+      font-weight: 600;
+      color: $primary-blue;
+      cursor: pointer;
+    }
+
+    li.btn:hover {
+      color: $light;
+      background: $primary-blue;
+    }
+  }
+}
