@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media screen and (max-width: 812px) {
+  @media screen and (max-width: 940px) {
     flex-direction: column;
   }
 
@@ -19,7 +19,7 @@
   }
 
   .logo {
-    max-width: 500px;
+    max-width: 400px;
     width: 100%;
     height: auto;
   }
@@ -37,7 +37,7 @@
     li.btn {
       padding: 5px 8px;
       border: 2px solid $primary-blue;
-      border-radius: 5px;
+      border-radius: 6px;
       font-weight: 600;
       color: $primary-blue;
       cursor: pointer;
@@ -48,4 +48,14 @@
       background: $primary-blue;
     }
   }
+}
+
+.burger {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background: $dark;
+  color: $light;
+  cursor: pointer;
+  border-radius: 6px;
 }
