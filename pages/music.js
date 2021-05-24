@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import styles from '../styles/Music.module.scss';
+import MusicPlayer from '../components/MusicPlayer';
 
 const Music = () => {
   const randomImage = () => {
@@ -10,7 +11,7 @@ const Music = () => {
       <h1>Music</h1>
       <h2>Player</h2>
       <div>
-        <div className={styles.player} style={{}}></div>
+        <MusicPlayer />
       </div>
       <h2>Releases</h2>
       <div className={styles.releases}>
