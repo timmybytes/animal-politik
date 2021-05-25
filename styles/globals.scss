@@ -16,8 +16,13 @@ body {
   background: $light;
 }
 a {
-  color: inherit;
+  color: $primary-blue;
   text-decoration: none;
+  border-bottom: 2px solid none;
+  transition: 0.1s;
+  &:hover {
+    border-bottom: 2px solid $primary-blue;
+  }
 }
 .page_title {
   display: block;

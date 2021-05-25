@@ -48,11 +48,15 @@
   justify-content: center;
   margin-bottom: 1rem;
   &__cover {
-    box-shadow: $shadow-4;
-    transform: translate(-4px, -4px);
+    border-radius: 6px;
     max-width: 400px;
     width: 400px;
     height: auto;
+    transition: 0.3s;
+    &:hover {
+      box-shadow: $shadow-8;
+      transform: translate(-4px, -4px);
+    }
   }
   &__title {
     font-size: 2.5rem;

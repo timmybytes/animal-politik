@@ -1,11 +1,9 @@
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import AuthContext from '../stores/authContext';
 import styles from '../styles/Navbar.module.scss';
 
 export default function Navbar() {
-  const { user, login, logout, authReady } = useContext(AuthContext);
   const router = useRouter();
   const [active, setActive] = useState('none');
 
@@ -20,7 +18,8 @@ export default function Navbar() {
           <a>
             <img
               className={styles.logo}
-              src='/SkinnyRedVector.svg'
+              // src='/SkinnyRedVector.svg'
+              src='/glitchLogo.gif'
               alt='Animal Politik logo'
             />
           </a>
@@ -62,35 +61,18 @@ export default function Navbar() {
               </a>
             </Link>
           </li>
-          {/* <li>
-            <Link href='/store'>
-              <a>Store</a>
-            </Link>
-          </li>
           <li>
-            <Link href='/members'>
-              <a>Members Only</a>
+            <Link href='/contact'>
+              <a
+                style={
+                  active === '/contact'
+                    ? { borderBottom: '2px solid #64a7f5' }
+                    : { borderBottom: 'none' }
+                }>
+                Contact
+              </a>
             </Link>
           </li>
-          {authReady && (
-            <>
-              {!user && (
-                <li className={styles.btn} onClick={login}>
-                  Login/Signup
-                </li>
-              )}
-              {user && (
-                <li>
-                  <strong>{user.user_metadata.full_name}</strong>
-                </li>
-              )}
-              {user && (
-                <li className={styles.btn} onClick={logout}>
-                  Logout
-                </li>
-              )}
-            </>
-          )} */}
         </ul>
       </nav>
     </div>
