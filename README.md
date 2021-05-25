@@ -1,6 +1,5 @@
 <h1>
-  <img src='/public/SkinnyRedVector.svg' />
-  <img src='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/6953bb5f5b89953e2c8638458065944b28c4ce31/public/SkinnyRedVector.svg' />
+  <img src='/public/SkinnyRedVector.svg' />`
 </h1>
 
 This is a site for the band Animal Politik, built to replace their current
