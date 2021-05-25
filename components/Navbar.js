@@ -18,7 +18,8 @@ export default function Navbar() {
           <a>
             <img
               className={styles.logo}
-              src='/SkinnyRedVector.svg'
+              // src='/SkinnyRedVector.svg'
+              src='/glitchLogo.gif'
               alt='Animal Politik logo'
             />
           </a>
