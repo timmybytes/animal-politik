@@ -19,8 +19,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
-
-/* banner */
-.banner img {
-  border-radius: 6px;
+.page_title {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 3.5rem;
 }
