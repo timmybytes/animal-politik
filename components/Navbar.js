@@ -1,10 +1,17 @@
 import { useContext, useEffect, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import AuthContext from '../stores/authContext';
 import styles from '../styles/Navbar.module.scss';
 
 export default function Navbar() {
   const { user, login, logout, authReady } = useContext(AuthContext);
+  const router = useRouter();
+  const [active, setActive] = useState('none');
+
+  useEffect(() => {
+    setActive(router.pathname);
+  });
 
   return (
     <div className={styles.container}>
@@ -21,17 +28,38 @@ export default function Navbar() {
         <ul>
           <li>
             <Link href='/'>
-              <a>Home</a>
+              <a
+                style={
+                  active === '/'
+                    ? { borderBottom: '2px solid #64a7f5' }
+                    : { borderBottom: 'none' }
+                }>
+                Home
+              </a>
             </Link>
           </li>
           <li>
             <Link href='/about'>
-              <a>About</a>
+              <a
+                style={
+                  active === '/about'
+                    ? { borderBottom: '2px solid #64a7f5' }
+                    : { borderBottom: 'none' }
+                }>
+                About
+              </a>
             </Link>
           </li>
           <li>
             <Link href='/music'>
-              <a>Music</a>
+              <a
+                style={
+                  active === '/music'
+                    ? { borderBottom: '2px solid #64a7f5' }
+                    : { borderBottom: 'none' }
+                }>
+                Music
+              </a>
             </Link>
           </li>
           {/* <li>
