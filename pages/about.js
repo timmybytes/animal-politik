@@ -4,8 +4,8 @@ import styles from '../styles/About.module.scss';
 export default function About() {
   return (
     <section className={styles.about}>
-      <h1>Animal Politik is a (mostly) human music-making collective.</h1>
-      <h2>Beginnings</h2>
+      <h1 className='page_title'>About</h1>
+      <h2>Animal Politik is a (mostly) human music-making collective.</h2>
       <p>
         Initially known as Days of Dreams, the group formed as a two-piece with
         Timothy Merritt on vocals and guitar, and Andrew Starr on drums in early
@@ -42,7 +42,6 @@ export default function About() {
         working under the new moniker of Animal Politik, and adding greater
         nuance to their songwriting.
       </p>
-      <h2>Now</h2>
       <p>
         In 2019 the quartet began work on their newest album, releasing the{' '}
         <a href=''>

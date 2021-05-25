@@ -11,12 +11,12 @@ const AlbumGrid = () => {
         <Album
           title='Simulacra'
           tracks={simulacra}
-          cover='/album-covers/simulacra-cover.png'
+          cover='/album-covers/simulacra-cover.jpg'
         />
         <Album
           title='Multnomah'
           tracks={multnomah}
-          cover='/album-covers/multnomah-cover.png'
+          cover='/album-covers/multnomah-cover.jpg'
         />
         <Album
           title='Fait Accompli'

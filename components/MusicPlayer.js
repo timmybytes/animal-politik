@@ -8,7 +8,7 @@ const MusicPlayer = () => {
       <label htmlFor='audio player'>{'Song'}</label>
       <ReactAudioPlayer
         src='https://animalpolitik.org/wp-content/uploads/2021/05/Tabs%20On%20Your%20Insides.mp3'
-        autoPlay
+        autoPlay={false}
         controls
       />
     </div>

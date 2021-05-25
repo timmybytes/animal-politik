@@ -18,7 +18,6 @@ export default function Navbar() {
             />
           </a>
         </Link>
-        {/* NOTE: Comment out and reload site during development for authReady-dependent code to load, then enter the Netlify site URL into the login modal.  */}
         <ul>
           <li>
             <Link href='/'>
@@ -31,6 +30,11 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
+            <Link href='/music'>
+              <a>Music</a>
+            </Link>
+          </li>
+          {/* <li>
             <Link href='/store'>
               <a>Store</a>
             </Link>
@@ -58,7 +62,7 @@ export default function Navbar() {
                 </li>
               )}
             </>
-          )}
+          )} */}
         </ul>
       </nav>
     </div>
