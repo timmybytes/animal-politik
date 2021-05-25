@@ -33,20 +33,6 @@
       display: inline-block;
       margin: 5px 5px 5px 16px;
     }
-
-    li.btn {
-      padding: 5px 8px;
-      border: 2px solid $primary-blue;
-      border-radius: 6px;
-      font-weight: 600;
-      color: $primary-blue;
-      cursor: pointer;
-    }
-
-    li.btn:hover {
-      color: $light;
-      background: $primary-blue;
-    }
   }
 }
 
