@@ -6,7 +6,7 @@ import styles from '../styles/Music.module.scss';
 const AlbumGrid = () => {
   return (
     <>
-      <h2>Releases</h2>
+      {/* <h2>Releases</h2> */}
       <section className={styles.grid}>
         <Album
           title='Simulacra'
