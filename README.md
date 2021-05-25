@@ -1,8 +1,11 @@
 <h1>
-  <img src='/public/SkinnyRedVector.svg' />`
+  <img src='/public/SkinnyRedVector.svg' />
 </h1>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2d571ff1-0318-4f15-80fc-775617b7939d/deploy-status)](https://app.netlify.com/sites/animalpolitik/deploys)
+<div align='center'>
+  <a href='https://app.netlify.com/sites/animalpolitik/deploys'>
+    <img src='https://api.netlify.com/api/v1/badges/2d571ff1-0318-4f15-80fc-775617b7939d/deploy-status' alt='Netlify build status' />
+  </a>
+</div>
 
 This is a site for the band Animal Politik, built to replace their current
 Wordpress site.
