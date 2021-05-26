@@ -8,7 +8,7 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <title>Animal Politik</title>
           <meta name='title' content='Animal Politik' />
