@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/About.module.scss';
+import styles from '@/styles/About.module.scss';
 
 export default function About() {
   return (
@@ -76,11 +76,7 @@ export default function About() {
         a full length LP before the band went on hiatus.
       </p>
       <figure className={styles.photo}>
-        <img
-          style={{ width: '100%' }}
-          src='/photos/IMG_3642.jpg'
-          alt='Animal Politik live'
-        />
+        <img src='/photos/IMG_3642.jpg' alt='Animal Politik live' />
         <figcaption className={styles.photo__caption}>Andrew Starr</figcaption>
       </figure>
       <p>

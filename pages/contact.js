@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from '../styles/Contact.module.scss';
+import styles from '@/styles/Contact.module.scss';
 
 const Music = () => {
   return (

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import styles from '../styles/Music.module.scss';
-import MusicPlayer from '../components/MusicPlayer';
-import AlbumGrid from '../components/AlbumGrid';
+import styles from '@/styles/Music.module.scss';
+import MusicPlayer from '@/components/MusicPlayer';
+import AlbumGrid from '@/components/AlbumGrid';
 
 const Music = () => {
   return (

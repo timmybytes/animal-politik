@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import styles from '../styles/Home.module.scss';
+import styles from '@/styles/Home.module.scss';
 
 export default function Home() {
   return (
@@ -10,9 +10,10 @@ export default function Home() {
         <br />
         soundtrack.
       </h2>
+      <hr />
       <p>
-        <strong className={styles.bandtag}>Animal Politik</strong> is an alternative rock band from
-        Portland, Oregon.{' '}
+        <strong className={styles.bandtag}>Animal Politik</strong> is an
+        alternative rock band from Portland, Oregon.{' '}
         <Link href='/about'>
           <a>Learn more about their history,</a>
         </Link>{' '}
