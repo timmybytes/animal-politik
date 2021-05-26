@@ -5,11 +5,13 @@ export default function Home() {
   return (
     <div div className={styles.home}>
       <h2>
-        We are living in the fever dream of maniacs — it might as well have a
-        good soundtrack.
+        We are living in the fever dream of maniacs
+        <br />— but it might as well have a good
+        <br />
+        soundtrack.
       </h2>
       <p>
-        <strong>Animal Politik</strong> is an alternative rock band from
+        <strong className={styles.bandtag}>Animal Politik</strong> is an alternative rock band from
         Portland, Oregon.{' '}
         <Link href='/about'>
           <a>Learn more about their history,</a>

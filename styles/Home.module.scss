@@ -1,14 +1,27 @@
+@use './colors.scss' as *;
+
 .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   max-width: 800px;
-  margin: 40px auto;
+  margin: 140px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
-
+  height: 100%;
   h2 {
     font-size: 1.75rem;
-    line-height: 1.1;
+    line-height: 1.4;
+    width: 100%;
     @media screen and (max-width: 600px) {
-      font-size: initial;
+      font-size: 1.4rem;
     }
+  }
+  .bandtag {
+    color: $primary-red;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 60px auto;
   }
 }

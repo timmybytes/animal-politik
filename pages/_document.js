@@ -14,7 +14,7 @@ class MyDocument extends Document {
           <meta name='title' content='Animal Politik' />
           <meta
             name='description'
-            content='Animal Politik | We are living in the fever dream of maniacs — it might as well have a
+            content='Animal Politik | We are living in the fever dream of maniacs — but it might as well have a
         good soundtrack.'
           />
           <link
@@ -28,7 +28,7 @@ class MyDocument extends Document {
           <meta property='og:title' content='Animal Politik' key='og-title' />
           <meta
             property='og:description'
-            content='Animal Politik | We are living in the fever dream of maniacs — it might as well have a
+            content='Animal Politik | We are living in the fever dream of maniacs — but it might as well have a
         good soundtrack.'
           />
           <meta
