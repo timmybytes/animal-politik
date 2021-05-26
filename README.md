@@ -30,6 +30,8 @@ The site is built with [Next.js](https://nextjs.org/),
 
 This is currently a work in progress.
 
+[Link to project Trello board.](https://trello.com/b/Sjz87z7J)
+
 ## License
 
 All assets and site content are © Animal Politik, All Rights Reserved.
