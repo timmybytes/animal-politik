@@ -34,7 +34,12 @@ const Album = ({ title, cover, tracks }) => {
   return (
     <motion.div className={styles.album} onClick={() => setHidden(!hidden)}>
       <motion.img
-        whileHover={{ scale: 1.03 }}
+        whileHover={{
+          boxShadow:
+            '0.5px 0.5px 0 0 #3B3B3B, 1px 1px 0 0 #3B3B3B, 1.5px 1.5px 0 0 #3B3B3B, 2px 2px 0 0 #3B3B3B, 2.5px 2.5px 0 0 #3B3B3B, 3px 3px 0 0 #3B3B3B, 3.5px 3.5px 0 0 #3B3B3B, 4px 4px 0 0 #3B3B3B, 4.5px 4.5px 0 0 #3B3B3B, 5px 5px 0 0 #3B3B3B, 5.5px 5.5px 0 0 #3B3B3B, 6px 6px 0 0 #3B3B3B, 6.5px 6.5px 0 0 #3B3B3B, 7px 7px 0 0 #3B3B3B, 7.5px 7.5px 0 0 #3B3B3B, 8px 8px 0 0 #3B3B3B',
+          x: -8,
+          y: -8,
+        }}
         whileTap={{ scale: 0.9 }}
         transition={{ duration: 0.3 }}
         className={styles.album__cover}
@@ -52,16 +57,18 @@ const Album = ({ title, cover, tracks }) => {
             className={styles.album__tracks}>
             {tracks.map((track, idx) => {
               return (
-                <motion.li
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                  custom={idx}
-                  variants={variants}
-                  animate='visible'
-                  key={idx}>
-                  {track.name}
-                </motion.li>
+                <>
+                  <motion.li
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    custom={idx}
+                    variants={variants}
+                    animate='visible'
+                    key={idx}>
+                    {track.name}
+                  </motion.li>
+                </>
               );
             })}
           </motion.ol>
