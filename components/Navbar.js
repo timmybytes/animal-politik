@@ -30,7 +30,11 @@ export default function Navbar() {
               <a
                 style={
                   active === '/'
-                    ? { borderBottom: '2px solid #64a7f5' }
+                    ? {
+                        borderBottom: '2px solid #64a7f5',
+                        fontSize: '105%',
+                        transition: '.2s',
+                      }
                     : { borderBottom: 'none' }
                 }>
                 Home
@@ -42,7 +46,11 @@ export default function Navbar() {
               <a
                 style={
                   active === '/about'
-                    ? { borderBottom: '2px solid #64a7f5' }
+                    ? {
+                        borderBottom: '2px solid #64a7f5',
+                        fontSize: '105%',
+                        transition: '.2s',
+                      }
                     : { borderBottom: 'none' }
                 }>
                 About
@@ -54,7 +62,11 @@ export default function Navbar() {
               <a
                 style={
                   active === '/music'
-                    ? { borderBottom: '2px solid #64a7f5' }
+                    ? {
+                        borderBottom: '2px solid #64a7f5',
+                        fontSize: '105%',
+                        transition: '.2s',
+                      }
                     : { borderBottom: 'none' }
                 }>
                 Music
@@ -66,7 +78,11 @@ export default function Navbar() {
               <a
                 style={
                   active === '/contact'
-                    ? { borderBottom: '2px solid #64a7f5' }
+                    ? {
+                        borderBottom: '2px solid #64a7f5',
+                        fontSize: '105%',
+                        transition: '.2s',
+                      }
                     : { borderBottom: 'none' }
                 }>
                 Contact
