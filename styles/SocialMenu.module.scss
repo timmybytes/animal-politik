@@ -1,0 +1,49 @@
+@use './colors.scss' as *;
+
+$width: 60px;
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 3rem 0;
+  @media screen and (max-width: 600px) {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+.social__container {
+  width: $width;
+  height: $width;
+  background: $primary-red;
+  border-radius: $width / 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    svg {
+      display: block;
+      fill: $dark;
+      width: 60%;
+      height: 60%;
+      border-radius: inherit;
+    }
+    &:hover {
+      border-bottom: none;
+    }
+  }
+  &:hover {
+    box-shadow: 3px 3px 0 0 $dark;
+    border-radius: $width / 2;
+    transition: 0.2s;
+  }
+}
