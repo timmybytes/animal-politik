@@ -12,9 +12,9 @@ export default function Home() {
         <strong>Animal Politik</strong> is an alternative rock band from
         Portland, Oregon.{' '}
         <Link href='/about'>
-          <a>Learn more</a>
+          <a>Learn more about their history,</a>
         </Link>{' '}
-        about their history, check out{' '}
+        check out{' '}
         <Link href='/music'>
           <a>their music</a>
         </Link>
