@@ -5,7 +5,35 @@ export default function About() {
   return (
     <section className={styles.about}>
       <h1 className='page_title'>About</h1>
-      <h2>Animal Politik is a (mostly) human music-making collective.</h2>
+      <h2 className={styles.header}>
+        Animal Politik is a (mostly) human, music-making collective:
+      </h2>
+      <div className={styles.members}>
+        <ul className={styles.member__list}>
+          <li className={styles.member}>
+            Timothy Merritt
+            <sub>Vocals, Guitar</sub>
+          </li>
+          <li className={styles.member}>
+            Michael Gleeson
+            <sub>Vocals, Bass, Guitar</sub>
+          </li>
+          <li className={styles.member}>
+            Andrew Starr
+            <sub>Drums</sub>
+          </li>
+          <li className={styles.member}>
+            Matthew Azar
+            <sub>Guitar</sub>
+          </li>
+        </ul>
+      </div>
+      <figure className={styles.photo}>
+        <img src='/photos/IMG_3590.jpg' alt='Animal Politik live' />
+        <figcaption className={styles.photo__caption}>
+          Michael Gleeson (left), Timothy Merritt (right)
+        </figcaption>
+      </figure>
       <p>
         Initially known as Days of Dreams, the group formed as a two-piece with
         Timothy Merritt on vocals and guitar, and Andrew Starr on drums in early
@@ -17,6 +45,12 @@ export default function About() {
         90s alternative through their own unique lens, releasing the full-length
         LP <em>Trauma Season</em> in December 2004.
       </p>
+      <figure className={styles.photo}>
+        <img src='/photos/IMG_3549.jpg' alt='Animal Politik live' />
+        <figcaption className={styles.photo__caption}>
+          Michael Gleeson (left), Andrew Starr (center), Timothy Merritt (right)
+        </figcaption>
+      </figure>
       <p>
         Over the next six months, the band played venues all over the state,
         gaining a small but dedicated following from their energetic live shows
@@ -26,6 +60,12 @@ export default function About() {
         record the <em>Hearing the Vision</em> EP, and continued to tour locally
         for the rest of the year.
       </p>
+      <figure className={styles.photo}>
+        <img src='/photos/IMG_3532.jpg' alt='Animal Politik live' />
+        <figcaption className={styles.photo__caption}>
+          Michael Gleeson (left), Timothy Merritt (right)
+        </figcaption>
+      </figure>
       <p>
         In November 2005 the group relocated to Portland, OR and changed their
         name to The Last Days of Dreams, performing at many historic now-defunct
@@ -35,6 +75,14 @@ export default function About() {
         month for years. In 2010, <em>Iron Sulfide Tremors</em> was released as
         a full length LP before the band went on hiatus.
       </p>
+      <figure className={styles.photo}>
+        <img
+          style={{ width: '100%' }}
+          src='/photos/IMG_3642.jpg'
+          alt='Animal Politik live'
+        />
+        <figcaption className={styles.photo__caption}>Andrew Starr</figcaption>
+      </figure>
       <p>
         In the interim, Gleeson, Starr, and other guest musicians collaborated
         as The Multnomah Project. By 2017 the original members were beginning to
@@ -42,6 +90,12 @@ export default function About() {
         working under the new moniker of Animal Politik, and adding greater
         nuance to their songwriting.
       </p>
+      <figure className={styles.photo}>
+        <img src='/photos/IMG_3688.jpg' alt='Animal Politik live' />
+        <figcaption className={styles.photo__caption}>
+          Timothy Merritt
+        </figcaption>
+      </figure>
       <p>
         In 2019 the quartet began work on their newest album, releasing the{' '}
         <a
@@ -66,6 +120,12 @@ export default function About() {
         </a>{' '}
         in spring of 2021.
       </p>
+      <figure className={styles.photo}>
+        <img src='/photos/IMG_3692.jpg' alt='Animal Politik live' />
+        <figcaption className={styles.photo__caption}>
+          Michael Gleeson
+        </figcaption>
+      </figure>
     </section>
   );
 }

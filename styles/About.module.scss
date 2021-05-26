@@ -1,3 +1,5 @@
+@use './colors.scss' as *;
+
 .about {
   max-width: 800px;
   margin: 40px auto;
@@ -5,5 +7,59 @@
   line-height: 1.6em;
   h1 {
     line-height: initial;
+  }
+
+  .header {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    @media screen and (max-width: 600px) {
+      font-size: initial;
+    }
+  }
+
+  .members {
+    text-align: center;
+    .member__list {
+      align-items: center;
+      background: $light;
+      border: 4px solid $dark;
+      color: $dark;
+      display: flex;
+      font-size: 1.15rem;
+      font-weight: 900;
+      justify-content: space-between;
+      list-style-type: none;
+      margin: 1rem 0;
+      padding: 1rem 0;
+      text-transform: uppercase;
+      .member {
+        padding: 0.5rem;
+        margin: 0;
+        sub {
+          display: block;
+          font-size: 70%;
+          color: $primary-red;
+        }
+      }
+      @media screen and (max-width: 725px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  .photo {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &__caption {
+      text-align: center;
+      font-size: 80%;
+      font-style: italic;
+      color: $gray;
+    }
   }
 }
