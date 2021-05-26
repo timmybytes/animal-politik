@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../styles/Navbar.module.scss';
+import styles from '@/styles/Navbar.module.scss';
 
 export default function Navbar() {
   const router = useRouter();
