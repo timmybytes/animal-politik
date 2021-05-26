@@ -11,7 +11,6 @@ export default function Home() {
         <br />
         soundtrack.
       </h2>
-      <hr />
       <p>
         <strong className={styles.bandtag}>Animal Politik</strong> is an
         alternative rock band from Portland, Oregon.{' '}
