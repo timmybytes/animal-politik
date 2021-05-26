@@ -17,6 +17,8 @@
   <sub>Built with 🎵 by Timothy Merritt
 </div>
 
+<img align='center' src='/public/screenshot-home.jpg' alt='screenshot of Animal Politik homepage' />
+
 This is a site for the band Animal Politik, built to replace their
 [current Wordpress site](https://animalpolitik.org).
 
