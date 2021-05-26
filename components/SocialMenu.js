@@ -1,48 +1,34 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import styles from '@/styles/SocialMenu.module.scss';
 
 const SocialMenu = () => {
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-evenly' }}>
+    <div className={styles.social}>
       <motion.div
-        style={{
-          width: 20,
-          height: 20,
-          background: 'red',
-          borderRadius: 10,
-        }}
+        animate={{ scale: 1.3 }}
+        transition={{ duration: 0.2 }}
+        className={styles.social__container}
       />
       <motion.div
-        style={{
-          width: 20,
-          height: 20,
-          background: 'red',
-          borderRadius: 10,
-        }}
+        animate={{ scale: 1.3 }}
+        transition={{ duration: 0.2 }}
+        className={styles.social__container}
       />
       <motion.div
-        style={{
-          width: 20,
-          height: 20,
-          background: 'red',
-          borderRadius: 10,
-        }}
+        animate={{ scale: 1.3 }}
+        transition={{ duration: 0.2 }}
+        className={styles.social__container}
       />
       <motion.div
-        style={{
-          width: 20,
-          height: 20,
-          background: 'red',
-          borderRadius: 10,
-        }}
+        animate={{ scale: 1.3 }}
+        transition={{ duration: 0.2 }}
+        className={styles.social__container}
       />
       <motion.div
-        style={{
-          width: 20,
-          height: 20,
-          background: 'red',
-          borderRadius: 10,
-        }}
+        animate={{ scale: 1.3 }}
+        transition={{ duration: 0.2 }}
+        className={styles.social__container}
       />
     </div>
   );

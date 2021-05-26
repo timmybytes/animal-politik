@@ -1,0 +1,16 @@
+@use './colors.scss' as *;
+
+$width: 35px;
+
+.social {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__container {
+  width: $width;
+  height: 35px;
+  background: $primary-red;
+  border-radius: $width / 2;
+  margin: 1rem;
+}
