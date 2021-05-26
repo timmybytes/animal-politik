@@ -44,15 +44,27 @@ export default function About() {
       </p>
       <p>
         In 2019 the quartet began work on their newest album, releasing the{' '}
-        <a href=''>
+        <a
+          href='https://animalpolitik.bandcamp.com/album/fait-accompli'
+          target='_blank'>
           <em>Fait Accompli</em>
         </a>{' '}
         LP in January 2020. Immediately going to work on their next effort, the
         band was sidelined by the global COVID-19 pandemic, though they
-        continued to record intermittently throughout the year, and released
-        <em>Multnomah</em>, a full length album comprised mostly of material
-        recorded during The Multnomah Project, before releasing{' '}
-        <em>Simulacra</em> in spring of 2021.
+        continued to record intermittently throughout the year, and released{' '}
+        <a
+          href='https://animalpolitik.bandcamp.com/album/multnomah'
+          target='_blank'>
+          <em>Multnomah</em>
+        </a>
+        , a full length album comprised mostly of material recorded during The
+        Multnomah Project, before releasing{' '}
+        <a
+          href='https://animalpolitik.bandcamp.com/album/simulacra'
+          target='_blank'>
+          <em>Simulacra</em>
+        </a>{' '}
+        in spring of 2021.
       </p>
     </section>
   );
