@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import styles from '@/styles/Music.module.scss';
 import MusicPlayer from '@/components/MusicPlayer';
 import AlbumGrid from '@/components/AlbumGrid';
-import SocialMenu from '@/components/SocialMenu';
+import SocialMenu from '@/components/SocialMenu/SocialMenu';
 
 const Music = () => {
   return (
