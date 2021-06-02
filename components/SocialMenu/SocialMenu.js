@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '@/styles/SocialMenu.module.scss';
-import SocialMenuIcon from './SocialMenuIcon';
+import styles from '@styles/SocialMenu.module.scss';
 import {
   SiApplemusic,
   SiBandcamp,
@@ -16,8 +15,7 @@ import {
 const SocialMenu = () => {
   return (
     <div className={styles.social}>
-      <SocialMenuIcon icon='Apple' />
-      {/* <motion.div className={styles.social__container}>
+      <motion.div className={styles.social__container}>
         <a
           href='https://music.apple.com/us/artist/animal-politik/1494225714'
           target='_blank'
@@ -80,7 +78,7 @@ const SocialMenu = () => {
           rel='noreferrer nofollow'>
           <SiKoFi />
         </a>
-      </motion.div> */}
+      </motion.div>
     </div>
   );
 };

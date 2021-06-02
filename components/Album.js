@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import styles from '@/styles/Music.module.scss';
+import styles from '@styles/Music.module.scss';
 
 const Album = ({ title, cover, tracks }) => {
   const [hidden, setHidden] = useState(true);

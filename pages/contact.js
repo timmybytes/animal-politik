@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import styles from '@/styles/Contact.module.scss';
-import SocialMenu from '@/components/SocialMenu/SocialMenu';
+import styles from '@styles/Contact.module.scss';
+import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 const Music = () => {
   return (

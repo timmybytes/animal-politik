@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '@/styles/SocialMenu.module.scss';
+import styles from '@styles/SocialMenu.module.scss';
 import * as Icon from 'react-icons/si';
 
 const SocialMenuIcon = ({ link, icon }) => {
@@ -29,8 +29,7 @@ const SocialMenuIcon = ({ link, icon }) => {
   return (
     <motion.div className={styles.social__container}>
       <a href={link} target='_blank' rel='noreferrer nofollow'>
-        {/* <SiApplemusic /> */}
-        {/* <SimpleIcon /> */}
+        {/* Icon */}
       </a>
     </motion.div>
   );

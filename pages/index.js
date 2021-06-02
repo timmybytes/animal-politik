@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import styles from '@/styles/Home.module.scss';
-import SocialMenu from '@/components/SocialMenu/SocialMenu';
+import styles from '@styles/Home.module.scss';
+import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 export default function Home() {
   return (
-    <div div className={styles.home}>
+    <div className={styles.home}>
       <h2>
         We are living in the fever dream of maniacs
         <br />— but it might as well have a good
