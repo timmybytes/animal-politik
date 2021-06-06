@@ -22,15 +22,22 @@
 This is a site for the band Animal Politik, built to replace their
 [current Wordpress site](https://animalpolitik.org).
 
+🚧 This is currently a work in progress.
+
+📋 [Link to project Trello board.](https://trello.com/b/Sjz87z7J)
+
+---
+
+### Dependencies
+
 The site is built with [Next.js](https://nextjs.org/),
 [Framer Motion](https://www.framer.com/motion/),
 [react-icons](https://react-icons.github.io/react-icons),
 [SCSS Modules](https://github.com/css-modules/css-modules), and deployed through
 [Netlify](https://www.netlify.com/).
 
-This is currently a work in progress.
-
-[Link to project Trello board.](https://trello.com/b/Sjz87z7J)
+Social media icons on the site use [tippy.js](https://atomiks.github.io/tippyjs)
+for beautiful animated tooltips.
 
 ## License
 
