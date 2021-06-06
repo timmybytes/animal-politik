@@ -6,7 +6,7 @@ const Music = () => {
   return (
     <section className={styles.contact}>
       <h1 className='page_title'>Contact</h1>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
       <form name='contact' method='POST' data-netlify='true'>
         <p>
           <label>

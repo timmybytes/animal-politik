@@ -11,18 +11,24 @@ import {
   SiTwitter,
   SiYoutube,
 } from 'react-icons/si';
+import SocialMenuIcon from '@components/SocialMenu/SocialMenuIcon';
 
 const SocialMenu = () => {
   return (
     <div className={styles.social}>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://music.apple.com/us/artist/animal-politik/1494225714'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiApplemusic />
-        </a>
-      </motion.div>
+      <SocialMenuIcon
+        icon={<SiApplemusic />}
+        link='https://music.apple.com/us/artist/animal-politik/1494225714'
+        tooltip={'Apple Music'}
+      />
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
+
       <motion.div className={styles.social__container}>
         <a
           href='https://open.spotify.com/artist/72RvQ5IlKW2zrVlPuxSr9h'

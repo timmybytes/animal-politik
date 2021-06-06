@@ -6,7 +6,7 @@ export default function About() {
   return (
     <section className={styles.about}>
       <h1 className='page_title'>About</h1>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
       <h2 className={styles.header}>
         Animal Politik is a (mostly) human, music-making collective:
       </h2>

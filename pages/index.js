@@ -26,7 +26,7 @@ export default function Home() {
           <a>send them a note.</a>
         </Link>
       </p>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
     </div>
   );
 }
