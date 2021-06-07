@@ -21,70 +21,36 @@ const SocialMenu = () => {
         link='https://music.apple.com/us/artist/animal-politik/1494225714'
         tooltip={'Apple Music'}
       />
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-      {/* <SocialMenuIcon icon={} link='' tooltip='' /> */}
-
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://open.spotify.com/artist/72RvQ5IlKW2zrVlPuxSr9h'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiSpotify />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://animalpolitik.bandcamp.com/'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiBandcamp />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://soundcloud.com/user-511973193'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiSoundcloud />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://twitter.com/nimalpolitik'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiTwitter />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://music.youtube.com/channel/UCKg5BbKgpP3820f05b6JYbg'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiYoutube />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://www.instagram.com/animal.politik/'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiInstagram />
-        </a>
-      </motion.div>
-      <motion.div className={styles.social__container}>
-        <a
-          href='https://ko-fi.com/animalpolitik'
-          target='_blank'
-          rel='noreferrer nofollow'>
-          <SiKoFi />
-        </a>
-      </motion.div>
+      <SocialMenuIcon
+        icon={<SiSpotify />}
+        link='https://open.spotify.com/artist/72RvQ5IlKW2zrVlPuxSr9h'
+        tooltip='Spotify'
+      />
+      <SocialMenuIcon
+        icon={<SiBandcamp />}
+        link='https://animalpolitikbandcamp.com/'
+        tooltip='BandCamp'
+      />
+      <SocialMenuIcon
+        icon={<SiSoundcloud />}
+        link='https://soundcloud.com/user-511973193'
+        tooltip='SoundCloud'
+      />
+      <SocialMenuIcon
+        icon={<SiTwitter />}
+        link='https://twitter.com/nimalpolitik'
+        tooltip='Twitter'
+      />
+      <SocialMenuIcon
+        icon={<SiYoutube />}
+        link='https://music.youtube.com/channel/UCKg5BbKgpP3820f05b6JYbg'
+        tooltip='YouTube'
+      />
+      <SocialMenuIcon
+        icon={<SiInstagram />}
+        link='https://www.instagram.com/animal.politik/'
+        tooltip='Instagram'
+      />
     </div>
   );
 };
