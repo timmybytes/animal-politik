@@ -5,7 +5,6 @@ import {
   SiApplemusic,
   SiBandcamp,
   SiInstagram,
-  SiKoFi,
   SiSoundcloud,
   SiSpotify,
   SiTwitter,
