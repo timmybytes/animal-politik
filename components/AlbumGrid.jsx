@@ -1,7 +1,7 @@
 import React from 'react';
-import Album from '@/components/Album';
+import Album from '@components/Album';
 import { simulacra, faitAccompli, multnomah } from '../albums';
-import styles from '@/styles/Music.module.scss';
+import styles from '@styles/Music.module.scss';
 
 const AlbumGrid = () => {
   return (

@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import styles from '@/styles/Contact.module.scss';
-import SocialMenu from '@/components/SocialMenu';
+import styles from '@styles/Contact.module.scss';
+import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 const Music = () => {
   return (
     <section className={styles.contact}>
       <h1 className='page_title'>Contact</h1>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
       <form name='contact' method='POST' data-netlify='true'>
         <p>
           <label>

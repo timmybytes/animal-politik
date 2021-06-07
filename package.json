@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@tippyjs/react": "^4.2.5",
     "framer-motion": "^4.1.17",
     "netlify-identity-widget": "^1.9.1",
     "next": "^10.2.2",
