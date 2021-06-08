@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import styles from '@styles/SocialMenu.module.scss';
+import styles from './SocialMenu.module.scss';
 import {
   SiApplemusic,
   SiBandcamp,

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
-import styles from '@styles/Music.module.scss';
+import styles from './MusicPlayer.module.scss';
 
 const MusicPlayer = () => {
   return (

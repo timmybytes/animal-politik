@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '@styles/Navbar.module.scss';
+import styles from './Navbar.module.scss';
 import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 export default function Navbar() {
