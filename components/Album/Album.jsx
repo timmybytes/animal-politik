@@ -47,7 +47,7 @@ const Album = ({ title, cover, tracks, children }) => {
         alt={`${title} Cover Art`}
       />
       <h3 className={styles.album__title}>{title}</h3>
-      <button>(open audio player)</button>
+      <button>Listen</button>
       <AnimatePresence>{!hidden && children}</AnimatePresence>
     </motion.div>
   );

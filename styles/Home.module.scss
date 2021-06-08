@@ -1,11 +1,12 @@
-@use './colors.scss' as *;
+@use 'colors' as *;
+@use 'utils' as *;
 
 .home {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 800px;
+  max-width: $max-page-width;
   margin: 140px auto;
   letter-spacing: 1px;
   line-height: 1.6em;

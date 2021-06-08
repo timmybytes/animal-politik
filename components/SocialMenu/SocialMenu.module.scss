@@ -1,4 +1,5 @@
-@use './colors.scss' as *;
+@use 'colors.scss' as *;
+@use 'utils' as *;
 
 $width: 40px;
 
@@ -8,8 +9,8 @@ $width: 40px;
   grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   grid-gap: 10px;
   justify-content: space-evenly;
-  margin: 3rem auto;
-  max-width: 800px;
+  margin: 1rem auto;
+  max-width: 500px;
   width: 100%;
   @media screen and (max-width: 400px) {
     display: flex;

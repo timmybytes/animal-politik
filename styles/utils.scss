@@ -1,5 +1,7 @@
 @use './colors.scss' as *;
 
+$max-page-width: 1000px;
+
 // prettier-ignore
 $shadow-8:
   0.5px 0.5px 0 0 $gray,
