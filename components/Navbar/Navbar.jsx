@@ -18,12 +18,10 @@ export default function Navbar() {
         <nav className={styles.nav}>
           <Link href='/'>
             <a>
-              <img
-                className={styles.logo}
-                // src='/SkinnyRedVector.svg'
-                src='/glitchLogo.gif'
-                alt='Animal Politik logo'
-              />
+              <video className={styles.logo} autoPlay loop muted playsInline>
+                <source src='/glitchLogo.webm' type='video/webm' />
+                <source src='/glitchLogo.mp4' type='video/mp4' />
+              </video>
             </a>
           </Link>
           <ul>
