@@ -1,0 +1,21 @@
+@use 'colors' as *;
+
+.player {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  audio {
+    width: 100%;
+  }
+}
+
+.BandCampPlayer {
+  border: 1px solid $dark;
+  border-radius: 6px;
+  height: 600px;
+  max-width: 300px;
+  overflow: hidden;
+}
