@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import styles from '@styles/Home.module.scss';
-import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 export default function Home() {
   return (
@@ -26,7 +25,6 @@ export default function Home() {
           <a>send them a note.</a>
         </Link>
       </p>
-      {/* <SocialMenu /> */}
     </div>
   );
 }

@@ -1,6 +1,5 @@
-import Navbar from '../components/Navbar';
+import Navbar from '../components/Navbar/Navbar';
 import '@styles/globals.scss';
-import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 function MyApp({ Component, pageProps }) {
   return (
