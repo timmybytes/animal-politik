@@ -1,8 +1,8 @@
-@use './colors.scss' as *;
-@use './utils.scss' as *;
+@use 'colors.scss' as *;
+@use 'utils.scss' as *;
 
 .music {
-  max-width: 800px;
+  max-width: $max-page-width;
   margin: 40px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
@@ -16,4 +16,3 @@
     font-size: 2rem;
   }
 }
-

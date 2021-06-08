@@ -1,7 +1,8 @@
-@use './colors.scss' as *;
+@use 'colors.scss' as *;
+@use 'utils' as *;
 
 .about {
-  max-width: 800px;
+  max-width: $max-page-width;
   margin: 40px auto;
   letter-spacing: 1px;
   line-height: 1.6em;
