@@ -6,7 +6,7 @@ const Music = () => {
   return (
     <section className={styles.music}>
       <h1 className='page_title'>Music</h1>
-      <AlbumGrid />
+      {/* <AlbumGrid /> */}
     </section>
   );
 };
