@@ -20,15 +20,14 @@ export default function Navbar() {
             <a>
               <video
                 className={styles.logo}
-                preload
                 autoPlay
                 loop
                 muted
                 playsInline
                 // !IMPORTANT - 'poster' attr acts as fallback logo image for browsers blocking video
-                poster='/SkinnyRedVector.svg'>
-                <source src='/glitchLogo.webm' type='video/webm' />
-                <source src='/glitchLogo.mp4' type='video/mp4' />
+                poster='/graphics/SkinnyRedVector.svg'>
+                <source src='/graphics/glitchLogo.webm' type='video/webm' />
+                <source src='/graphics/glitchLogo.mp4' type='video/mp4' />
               </video>
             </a>
           </Link>

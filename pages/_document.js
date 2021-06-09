@@ -38,7 +38,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/OG_Image.png'
+            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OG_Image.png'
             key='og-img'
           />
           <meta
@@ -60,7 +60,7 @@ class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/OG_Image.png'
+            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OG_Image.png'
             key='twitter-img'
           />
           <meta
