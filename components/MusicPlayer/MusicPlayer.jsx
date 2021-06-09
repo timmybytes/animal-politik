@@ -1,34 +1,39 @@
-import React, { useState, useEffect } from 'react';
-import styles from './MusicPlayer.module.scss';
+import React from 'react';
+import styles from '@components/MusicPlayer/MusicPlayer.module.scss';
 
-Amplitude.init({
-  songs: [
-    {
-      name: 'Song Name 1',
-      artist: 'Artist Name',
-      album: 'Album Name',
-      url: '/song/url.mp3',
-      cover_art_url: '/cover/art/url.jpg',
-    },
-    {
-      name: 'Song Name 2',
-      artist: 'Artist Name',
-      album: 'Album Name',
-      url: '/song/url.mp3',
-      cover_art_url: '/cover/art/url.jpg',
-    },
-    {
-      name: 'Song Name 3',
-      artist: 'Artist Name',
-      album: 'Album Name',
-      url: '/song/url.mp3',
-      cover_art_url: '/cover/art/url.jpg',
-    },
-  ],
-});
+// <player>
+//   <trackInfo>
+//     <art></art>
+//     <album></album>
+//     <year></year>
+//     <share></share>
+//     <download></download>
+//   </trackInfo >
+//   <audio></audio>
+// </player >
 
 const MusicPlayer = () => {
-  return <div className={styles.player}></div>;
+  return (
+    <>
+      <div className={styles.player}>
+        <div className={styles.trackInfo}>
+          <h3>Quagmire</h3>
+          <h4>
+            Simulacra <span>•</span>
+            <span className={styles.year}>2021</span>
+          </h4>
+        </div>
+        <audio autoPlay={false} controls>
+          <source src='/songs/Quagmire.mp3' type='audio/mp3' />
+          <p>
+            Your browser does not support the
+            <code>audio</code> element. Here is a{' '}
+            <a href='/songs/Quagmire.mp3'>link to the audio</a> instead.
+          </p>
+        </audio>
+      </div>
+    </>
+  );
 };
 
 export default MusicPlayer;

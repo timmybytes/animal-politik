@@ -1,0 +1,9 @@
+@use 'colors' as *;
+
+.BandCampPlayer {
+  border: 1px solid $dark;
+  border-radius: 6px;
+  height: 600px;
+  max-width: 300px;
+  overflow: hidden;
+}
