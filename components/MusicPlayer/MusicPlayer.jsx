@@ -2,64 +2,87 @@ import React, { useState, useEffect } from 'react';
 import styles from '@components/MusicPlayer/MusicPlayer.module.scss';
 import { simulacra } from '../../musicData.js';
 
-const trackPlayer = ({ track, children, ...props }) => {
-  return (
-    <div>
-      <img src={track.artwork} alt={`Artwork for ${track.album}`} />
-      <p>{track.title}</p>
-      <p>{track.album}</p>
-      <audio src={track.audio}></audio>
-    </div>
-  );
-};
-
-const MusicPlayer = () => {
-  const [currentSong, setCurrentSong] = useState();
-
-  const handleSinglePlay = e => {
-    // console.log(e.target.title);
-    console.log(e);
-    setCurrentSong(e.target.title);
-  };
-
-  const handlePlay = e => {
-    console.log('play');
-  };
-
-  const handleStop = e => {
-    console.log('stop');
-  };
+const TrackPlayer = ({ song, children, ...props }) => {
   return (
     <div
       style={{
         display: 'flex',
         flexDirection: 'column',
-        justifyContent: 'stretch',
-        justifyItems: 'stretch',
-        alignContent: 'stretch',
-        width: '100%',
+        alignItems: 'center',
+        padding: '30px',
+        border: '1px solid black',
+        borderRadius: '6px',
+      }}>
+      <img
+        style={{ maxWidth: '200px', width: '100%', height: 'auto' }}
+        src={song.artwork}
+        alt={`Artwork for ${song.album}`}
+      />
+      <p>{song.title}</p>
+      <p>{song.album}</p>
+      <audio src={song.audio} controls></audio>
+    </div>
+  );
+};
+
+const MusicPlayer = () => {
+  const [current, setCurrent] = useState({ title: '', audio: '' });
+
+  const handleClick = e => {
+    const songAudio = e.currentTarget.dataset.audio;
+    const songTitle = e.currentTarget.dataset.title;
+    setCurrent({ title: songTitle, audio: songAudio });
+  };
+
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '400px',
+        borderRadius: '6px',
+        padding: '1rem',
+        border: '1px solid #3b3b3b',
+        margin: '0 auto',
       }}
-      className={styles.player}>
-      {simulacra.map(song => {
-        return (
-          <div style={{ width: '100%' }}>
-            <p>{song.title}</p>
-            <audio
-              onPlay={handlePlay}
-              onPause={handleStop}
-              src={song.audio}
-              controls
-              playsInline={true}
-              loop={false}
-              autoPlay={false}
-              title={song.title}
-              type={currentSong === song.title ? 'play' : 'pause'}>
-              Your browser does not support HTML5 audio! But you can still
-              download this song here: <a href={song.audio}>{song.title}</a>
-            </audio>
-          </div>
-        );
-      })}
+      // className={styles.player}
+    >
+      <>
+        <div>
+          <h2>Simulacra</h2>
+          <p>{current.title}</p>
+          <audio
+            style={{ width: '100%' }}
+            src={current.audio}
+            controls
+            playsInline
+            mute
+          />
+        </div>
+        <div>
+          <ul
+            style={{
+              margin: 0,
+              padding: 0,
+              listStyleType: 'none',
+            }}>
+            {simulacra.map((song, idx) => {
+              const key = song.title;
+              return (
+                <li key={key}>
+                  {song.trackNumber} - {song.title}{' '}
+                  <button
+                    data-title={song.title}
+                    data-audio={song.audio}
+                    onClick={handleClick}>
+                    Play
+                  </button>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </>
     </div>
   );
 };
