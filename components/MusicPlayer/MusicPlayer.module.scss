@@ -1,5 +1,19 @@
 @use 'colors' as *;
 
+.MusicPlayer {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  border-radius: 6px;
+  border: 1px solid $dark;
+  padding: 1rem;
+  margin: 0 auto;
+  &__albumTitle {
+    text-transform: uppercase;
+    letter-spacing: -2px;
+  }
+}
+
 .player {
   display: flex;
   justify-self: center;

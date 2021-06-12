@@ -35,21 +35,11 @@ const MusicPlayer = () => {
   };
 
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '400px',
-        borderRadius: '6px',
-        padding: '1rem',
-        border: '1px solid #3b3b3b',
-        margin: '0 auto',
-      }}
-      // className={styles.player}
-    >
+    <div className={styles.MusicPlayer}>
       <>
+        {/* Current Album Info & Player */}
         <div>
-          <h2>Simulacra</h2>
+          <h2 className={styles.MusicPlayer__albumTitle}>Simulacra</h2>
           <p>{current.title}</p>
           <audio
             style={{ width: '100%' }}
@@ -59,6 +49,7 @@ const MusicPlayer = () => {
             mute
           />
         </div>
+        {/* Current Album Tracklist */}
         <div>
           <ul
             style={{
