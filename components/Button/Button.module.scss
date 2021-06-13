@@ -1,0 +1,96 @@
+@use 'colors' as *;
+
+@mixin Button($color) {
+  background: $color;
+  border-radius: 6px;
+  border: 2px solid $color;
+  box-shadow: 0.5px 0.5px 4px $dark;
+  color: $light;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  outline: none;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  transition: 0.2s;
+  &:hover {
+    background: scale-color($color, $lightness: -10%);
+    border: 2px solid scale-color($color, $lightness: -10%);
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+  @media screen and (max-width: 600px) {
+    font-size: 1rem;
+    // margin: 0.25rem;
+    padding: 0.25rem 0.5rem;
+  }
+  @if $color == $light {
+    color: $dark;
+    &:hover {
+      background: $primary-red;
+      border: 2px solid $primary-red;
+    }
+  }
+  @if $color == $button-disabled {
+    color: $gray;
+    box-shadow: none;
+    border: 2px solid $button-disabled;
+    pointer-events: none;
+  }
+}
+
+.button {
+  @include Button($light);
+}
+
+.info {
+  @include Button($button-info);
+}
+.success {
+  @include Button($button-success);
+}
+.warning {
+  @include Button($button-warning);
+}
+.primary {
+  @include Button($button-primary);
+}
+.disabled {
+  @include Button($button-disabled);
+}
+
+@mixin small($color) {
+  @include Button($light);
+  box-shadow: 0.25px 0.25px 2px $dark;
+  font-size: 0.75rem;
+  margin: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+.small {
+  @include small($light);
+}
+.small_info {
+  @include small($button-info);
+}
+.small_success {
+  @include small($button-success);
+}
+.small_warning {
+  @include small($button-warning);
+}
+.small_primary {
+  @include small($button-primary);
+}
+.small_disabled {
+  @include small($button-disabled);
+}
+
+.large {
+  @include Button($light);
+  box-shadow: 0.75px 0.75px 6px $dark;
+  font-size: 1.25rem;
+  margin: 0.75rem;
+  padding: 0.75rem 0.5rem;
+}

@@ -35,13 +35,17 @@ $width: 40px;
     height: 100%;
     svg {
       display: block;
-      width: 60%;
-      height: 60%;
+      width: 80%;
+      height: 80%;
       border-radius: inherit;
       fill: $primary-red;
       transition: 0.3s;
+      -webkit-filter: drop-shadow(1px 1px 0.3px rgba(59, 59, 59, 0.7));
+      filter: drop-shadow(1px 1px 0.3px rgba(59, 59, 59, 0.7));
+      transition: 0.2s;
       &:hover {
         fill: $primary-blue;
+        transform: scale(1.15);
       }
     }
     &:hover {

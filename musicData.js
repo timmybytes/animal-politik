@@ -225,7 +225,7 @@ export const simulacra = {
       trackID: 'QZKGM2100011',
       trackNumber: 11,
       trackAudio: `${AUDIO}/simulacra/wear-their-hunger-and-their-haunt.mp3`,
-      trackTitle: 'Wear Their Hunger & Their haunt',
+      trackTitle: 'Wear Their Hunger & Their Haunt',
     },
   ],
 };
