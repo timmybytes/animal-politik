@@ -1,81 +1,43 @@
-import React, { useState, useEffect } from 'react';
-import styles from '@components/MusicPlayer/MusicPlayer.module.scss';
-import { simulacra } from '../../musicData.js';
+import React, { useState } from 'react';
+import { faitAccompli, simulacra, multnomah } from '../../musicData';
+import styles from './MusicPlayer.module.scss';
+import AlbumSelector from './AlbumSelector/AlbumSelector';
+import PlayerHeader from './PlayerHeader/PlayerHeader';
+import PlayerAudio from './PlayerAudio/PlayerAudio';
+import PlayerArt from './PlayerArt/PlayerArt';
+import PlayerTracks from './PlayerTracks/PlayerTracks';
 
-const TrackPlayer = ({ song, children, ...props }) => {
+const NewMusicPlayer = () => {
+  const [currentAlbum, setCurrentAlbum] = useState(simulacra);
+  const [currentSong, setCurrentSong] = useState({ title: '', audio: '' });
+
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        padding: '30px',
-        border: '1px solid black',
-        borderRadius: '6px',
-      }}>
-      <img
-        style={{ maxWidth: '200px', width: '100%', height: 'auto' }}
-        src={song.artwork}
-        alt={`Artwork for ${song.album}`}
+    <div className={styles.player}>
+      {/* Select album from array */}
+      <AlbumSelector
+        albums={[faitAccompli, simulacra, multnomah]}
+        setCurrentAlbum={setCurrentAlbum}
       />
-      <p>{song.title}</p>
-      <p>{song.album}</p>
-      <audio src={song.audio} controls></audio>
+
+      {/* Responsive grid container for player UI */}
+      <div className={styles.player_grid}>
+        <PlayerHeader currentSong={currentSong} currentAlbum={currentAlbum} />
+
+        {/* Render audio player only when valid song is selected */}
+        <PlayerAudio currentSong={currentSong} />
+
+        {/* Show the artwork and caption for current album */}
+        <PlayerArt currentAlbum={currentAlbum} />
+
+        {/* Show tracklist of currently selected album */}
+        <PlayerTracks
+          setCurrentSong={setCurrentSong}
+          currentAlbum={currentAlbum}
+          currentSong={currentSong}
+        />
+      </div>
     </div>
   );
 };
 
-const MusicPlayer = () => {
-  const [current, setCurrent] = useState({ title: '', audio: '' });
-
-  const handleClick = e => {
-    const songAudio = e.currentTarget.dataset.audio;
-    const songTitle = e.currentTarget.dataset.title;
-    setCurrent({ title: songTitle, audio: songAudio });
-  };
-
-  return (
-    <div className={styles.MusicPlayer}>
-      <>
-        {/* Current Album Info & Player */}
-        <div>
-          <h2 className={styles.MusicPlayer__albumTitle}>Simulacra</h2>
-          <p>{current.title}</p>
-          <audio
-            style={{ width: '100%' }}
-            src={current.audio}
-            controls
-            playsInline
-            mute
-          />
-        </div>
-        {/* Current Album Tracklist */}
-        <div>
-          <ul
-            style={{
-              margin: 0,
-              padding: 0,
-              listStyleType: 'none',
-            }}>
-            {simulacra.map((song, idx) => {
-              const key = song.title;
-              return (
-                <li key={key}>
-                  {song.trackNumber} - {song.title}{' '}
-                  <button
-                    data-title={song.title}
-                    data-audio={song.audio}
-                    onClick={handleClick}>
-                    Play
-                  </button>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </>
-    </div>
-  );
-};
-
-export default MusicPlayer;
+export default NewMusicPlayer;
