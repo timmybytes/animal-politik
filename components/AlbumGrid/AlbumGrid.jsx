@@ -1,6 +1,5 @@
 import React from 'react';
 import Album from '@components/Album/Album';
-import { simulacra, faitAccompli, multnomah } from '../../albums';
 import styles from './AlbumGrid.module.scss';
 import BandCampPlayer from '../MusicPlayer/BandCampPlayer';
 

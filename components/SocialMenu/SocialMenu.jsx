@@ -27,7 +27,7 @@ const SocialMenu = () => {
       />
       <SocialMenuIcon
         icon={<SiBandcamp />}
-        link='https://animalpolitikbandcamp.com/'
+        link='https://animalpolitik.bandcamp.com/'
         tooltip='BandCamp'
       />
       <SocialMenuIcon

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './MusicPlayer.module.scss';
+import styles from './BandCampPlayer.module.scss';
 
 const BandCampPlayer = ({ album }) => {
   const albums = {
