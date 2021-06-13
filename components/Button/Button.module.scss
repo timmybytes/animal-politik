@@ -94,3 +94,11 @@
   margin: 0.75rem;
   padding: 0.75rem 0.5rem;
 }
+
+.selected {
+  @include Button($button-primary);
+  background: scale-color($primary-red, $lightness: -10%);
+  border: 2px solid scale-color($primary-red, $lightness: -10%);
+  cursor: pointer;
+  transform: scale(1.05);
+}
