@@ -27,7 +27,7 @@ const NewMusicPlayer = () => {
         <div className={styles.header}>
           {currentSong.title ? 'Now Playing:' : 'No song selected'}{' '}
           <span>{currentSong.title}</span>
-          {currentSong.audio && currentAlbum.albumTitle}
+          {currentSong.audio ? `(${currentAlbum.albumTitle})` : ''}
         </div>
         {currentSong !== '/' && (
           <audio
