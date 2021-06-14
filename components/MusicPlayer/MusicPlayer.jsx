@@ -7,20 +7,21 @@ import PlayerAudio from './PlayerAudio/PlayerAudio';
 import PlayerArt from './PlayerArt/PlayerArt';
 import PlayerTracks from './PlayerTracks/PlayerTracks';
 
-const NewMusicPlayer = () => {
+const MusicPlayer = () => {
   const [currentAlbum, setCurrentAlbum] = useState(simulacra);
   const [currentSong, setCurrentSong] = useState({
-    title: '',
-    audio: '',
-    album: '',
+    title: 'Quagmire',
+    audio: '/music/simulacra/quagmire.mp3',
+    album: 'simulacra',
   });
 
   return (
     <div className={styles.player}>
       {/* Select album from array */}
       <AlbumSelector
-        albums={[faitAccompli, simulacra, multnomah]}
+        albums={[faitAccompli, multnomah, simulacra]}
         setCurrentAlbum={setCurrentAlbum}
+        currentAlbum={currentAlbum}
       />
 
       {/* Responsive grid container for player UI */}
@@ -44,4 +45,4 @@ const NewMusicPlayer = () => {
   );
 };
 
-export default NewMusicPlayer;
+export default MusicPlayer;

@@ -2,15 +2,25 @@ import React from 'react';
 import styles from '../MusicPlayer.module.scss';
 import Button from '@components/Button/Button';
 
-const AlbumSelector = ({ children, albums, setCurrentAlbum, ...props }) => {
+const AlbumSelector = ({
+  children,
+  albums,
+  currentAlbum,
+  setCurrentAlbum,
+  ...props
+}) => {
   return (
-    <div className={styles.buttons}>
+    <div className={styles.albumSelector}>
       <h3>Albums</h3>
       {/* Render a button for each album object received from albums[] */}
       {albums ? (
-        albums.map(album => {
+        albums.map((album, idx) => {
           return (
-            <Button value={album} onClick={() => setCurrentAlbum(album)}>
+            <Button
+              key={idx}
+              type={album === currentAlbum ? 'outline' : 'flat'}
+              value={album}
+              onClick={() => setCurrentAlbum(album)}>
               {album.albumTitle}
             </Button>
           );
