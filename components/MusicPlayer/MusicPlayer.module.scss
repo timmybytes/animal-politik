@@ -8,12 +8,14 @@
   justify-content: center;
   margin: 0 auto;
   max-width: 700px;
-  padding: 1rem;
-  .buttons {
+  .albumSelector {
     display: flex;
-    justify-content: space-evenly;
-    justify-items: stretch;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
+    border: 2px solid $light;
+    box-shadow: none;
+    width: 100%;
     h3 {
       background: $primary-red;
       border-radius: 6px;
@@ -28,11 +30,13 @@
       text-transform: uppercase;
       font-weight: 700;
       text-align: center;
+      display: block;
     }
   }
-  @media screen and (max-width: 800px) {
-    .buttons {
+  @media screen and (max-width: 600px) {
+    .albumSelector {
       flex-direction: column;
+      align-items: stretch;
       gap: 0;
       width: 100%;
     }
@@ -58,16 +62,23 @@
     box-shadow: inset -5px 5px 20px 0 black;
     color: $light;
     display: flex;
+    font-size: 1.5rem;
     gap: 5px;
     grid-area: header;
     height: 60px;
     justify-content: center;
     line-height: initial;
     margin: 0;
-    overflow-x: scroll;
+    overflow-x: hidden;
     padding: 0 10px;
     white-space: nowrap;
     width: 700px;
+    .inner__header {
+      -moz-animation: marquee 29s linear infinite;
+      -webkit-animation: marquee 29s linear infinite;
+      animation: marquee 29s linear infinite;
+      animation-delay: 5s;
+    }
     span {
       color: $primary-red;
       text-overflow: clip;
@@ -112,7 +123,7 @@
     }
   }
   .tracks {
-    align-items: stretch;
+    align-items: flex-start;
     align-self: stretch;
     cursor: pointer;
     display: flex;
@@ -124,17 +135,7 @@
     margin: 0;
     max-width: 250px;
     padding: 0;
-    li {
-      border-radius: 6px;
-      margin: 0;
-      padding: 5px;
-      transition: 0.1s;
-      // white-space: nowrap;
-      &:hover {
-        background: $primary-red;
-        color: $dark;
-      }
-    }
+    text-align: left;
   }
   @media screen and (max-width: 800px) {
     grid-template-columns: auto;
@@ -148,16 +149,17 @@
     .header {
       justify-content: flex-start;
       width: 100%;
+      .inner__header {
+        -moz-animation: marquee 22s linear infinite;
+        -webkit-animation: marquee 22s linear infinite;
+        animation: marquee 22s linear infinite;
+      }
     }
     .art {
       max-width: 100%;
     }
     .tracks {
       grid-row: 4/5;
-      max-width: 200px;
-      li {
-        white-space: initial;
-      }
     }
   }
   @media screen and (max-width: 400px) {
@@ -169,5 +171,34 @@
         padding: 0 5px;
       }
     }
+  }
+}
+
+@-moz-keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-90%);
+  }
+}
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  100% {
+    -moz-transform: translateX(-90%);
+    -webkit-transform: translateX(-90%);
+    transform: translateX(-90%);
   }
 }

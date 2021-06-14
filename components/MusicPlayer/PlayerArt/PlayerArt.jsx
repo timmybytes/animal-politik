@@ -1,3 +1,4 @@
+import Button from '@components/Button/Button';
 import React from 'react';
 import styles from '../MusicPlayer.module.scss';
 
@@ -8,9 +9,13 @@ const PlayerArt = ({ currentAlbum }) => {
 
       <div className={styles.art_caption}>
         {currentAlbum && (
-          <figcaption>
-            {currentAlbum.albumTitle} ({currentAlbum.albumYear})
-          </figcaption>
+          <div>
+            <figcaption>
+              {currentAlbum.albumTitle} ({currentAlbum.albumYear})
+            </figcaption>
+            {/* TODO: Download buttons */}
+            {/* <Button type='outline'>Download</Button> */}
+          </div>
         )}
       </div>
     </div>

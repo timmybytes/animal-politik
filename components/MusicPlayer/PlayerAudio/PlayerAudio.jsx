@@ -14,7 +14,7 @@ const PlayerAudio = ({ currentSong, ...props }) => {
           controls
           autoPlay={true}
           playsInline={true}
-          preload>
+          preload='auto'>
           {/* Disclaimer if audio is blocked */}
           It looks like your browser can't play HTML5 audio! You can still get
           the music <a href={currentSong.audio}>here</a>.

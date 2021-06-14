@@ -1,20 +1,33 @@
 import React from 'react';
 import styles from '../MusicPlayer.module.scss';
+import Button from '@components/Button/Button';
+import { RiDownloadCloudFill } from 'react-icons/ri';
 
 const PlayerTracks = ({ currentAlbum, setCurrentSong, currentSong }) => {
   return (
-    <ul className={styles.tracks}>
+    <div className={styles.tracks}>
       {currentAlbum.tracks.map(track => {
+        {
+          /* TODO: Download Buttons */
+        }
+        {
+          /* <div
+            style={{
+              display: 'flex',
+              width: '100%',
+              justifyContent: 'space-between',
+              // justifyItems: 'stretch',
+              alignItems: 'center',
+              // alignContent: 'stretch',
+            }}> */
+        }
         return (
-          <li
+          <Button
             key={track.trackID}
-            style={
+            type={
               currentSong.title === track.trackTitle
-                ? {
-                    fontWeight: 'bold',
-                    border: '2px solid #fe7272',
-                  }
-                : {}
+                ? 'tracklist__outline'
+                : 'tracklist__flat'
             }
             onClick={() =>
               setCurrentSong({
@@ -24,10 +37,19 @@ const PlayerTracks = ({ currentAlbum, setCurrentSong, currentSong }) => {
               })
             }>
             {track.trackNumber}. {track.trackTitle}
-          </li>
+          </Button>
         );
+        {
+          /* TODO: Download Buttons */
+        }
+        {
+          /* <Button type='tracklist__filled'>
+              <RiDownloadCloudFill />
+            </Button>
+          </div> */
+        }
       })}
-    </ul>
+    </div>
   );
 };
 

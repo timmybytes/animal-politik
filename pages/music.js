@@ -7,8 +7,6 @@ const Music = () => {
     <section className={styles.music}>
       <h1 className='page_title'>Music</h1>
       <MusicPlayer />
-      {/* <AlbumGrid /> */}
-      {/* <MusicPlayer /> */}
     </section>
   );
 };

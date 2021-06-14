@@ -1,12 +1,10 @@
 @use 'colors' as *;
 
-@mixin Button($color) {
+@mixin Button($color: $light, $type: '') {
   background: $color;
   border-radius: 6px;
   border: 2px solid $color;
-  border: none;
   box-shadow: 0.5px 0.5px 4px $dark;
-  box-shadow: none;
   color: $light;
   font-family: 'Montserrat';
   font-weight: 600;
@@ -24,8 +22,13 @@
   }
   @media screen and (max-width: 600px) {
     font-size: 1rem;
-    // margin: 0.25rem;
+    margin: 0.25rem;
     padding: 0.25rem 0.5rem;
+  }
+  @media screen and (max-width: 800px) {
+    &:hover {
+      transform: none;
+    }
   }
   @if $color == $light {
     color: $dark;
@@ -62,35 +65,14 @@
   @include Button($button-disabled);
 }
 
-@mixin small($color) {
-  @include Button($light);
+.small {
   box-shadow: 0.25px 0.25px 2px $dark;
   font-size: 0.75rem;
   margin: 0.25rem;
   padding: 0.25rem 0.5rem;
 }
 
-.small {
-  @include small($light);
-}
-.small_info {
-  @include small($button-info);
-}
-.small_success {
-  @include small($button-success);
-}
-.small_warning {
-  @include small($button-warning);
-}
-.small_primary {
-  @include small($button-primary);
-}
-.small_disabled {
-  @include small($button-disabled);
-}
-
 .large {
-  @include Button($light);
   box-shadow: 0.75px 0.75px 6px $dark;
   font-size: 1.25rem;
   margin: 0.75rem;
@@ -98,9 +80,55 @@
 }
 
 .selected {
-  @include Button($button-primary);
-  background: scale-color($primary-red, $lightness: -10%);
-  border: 2px solid scale-color($primary-red, $lightness: -10%);
+  background: $primary-red;
+  border: 2px solid $primary-red;
   cursor: pointer;
   transform: scale(1.05);
+}
+
+.outline {
+  border: 2px solid $primary-red;
+  box-shadow: none;
+}
+
+.flat {
+  box-shadow: none;
+}
+
+.tracklist__flat {
+  box-shadow: none;
+  margin: 0;
+  padding: 0.25rem;
+  text-align: left;
+  @media screen and (max-width: 800px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+.tracklist__filled {
+  @include Button($primary-red);
+  box-shadow: none;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  @media screen and (max-width: 800px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+.tracklist__outline {
+  border: 2px solid $primary-red;
+  box-shadow: none;
+  margin: 0;
+  padding: 0.25rem;
+  text-align: left;
+  @media screen and (max-width: 800px) {
+    &:hover {
+      transform: scale(1);
+    }
+  }
 }
