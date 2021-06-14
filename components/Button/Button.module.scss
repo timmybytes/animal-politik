@@ -4,7 +4,9 @@
   background: $color;
   border-radius: 6px;
   border: 2px solid $color;
+  border: none;
   box-shadow: 0.5px 0.5px 4px $dark;
+  box-shadow: none;
   color: $light;
   font-family: 'Montserrat';
   font-weight: 600;
