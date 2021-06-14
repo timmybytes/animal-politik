@@ -9,7 +9,11 @@ import PlayerTracks from './PlayerTracks/PlayerTracks';
 
 const NewMusicPlayer = () => {
   const [currentAlbum, setCurrentAlbum] = useState(simulacra);
-  const [currentSong, setCurrentSong] = useState({ title: '', audio: '' });
+  const [currentSong, setCurrentSong] = useState({
+    title: '',
+    audio: '',
+    album: '',
+  });
 
   return (
     <div className={styles.player}>
@@ -21,7 +25,7 @@ const NewMusicPlayer = () => {
 
       {/* Responsive grid container for player UI */}
       <div className={styles.player_grid}>
-        <PlayerHeader currentSong={currentSong} currentAlbum={currentAlbum} />
+        <PlayerHeader currentSong={currentSong} />
 
         {/* Render audio player only when valid song is selected */}
         <PlayerAudio currentSong={currentSong} />

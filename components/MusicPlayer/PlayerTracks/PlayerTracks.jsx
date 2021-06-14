@@ -20,6 +20,7 @@ const PlayerTracks = ({ currentAlbum, setCurrentSong, currentSong }) => {
               setCurrentSong({
                 title: track.trackTitle,
                 audio: track.trackAudio,
+                album: currentAlbum.albumTitle,
               })
             }>
             {track.trackNumber}. {track.trackTitle}
