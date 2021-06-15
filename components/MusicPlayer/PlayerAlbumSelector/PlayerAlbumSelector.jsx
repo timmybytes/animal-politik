@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../MusicPlayer.module.scss';
 import Button from '@components/Button/Button';
 
-const AlbumSelector = ({
+const PlayerAlbumSelector = ({
   children,
   albums,
   currentAlbum,
@@ -34,4 +34,4 @@ const AlbumSelector = ({
   );
 };
 
-export default AlbumSelector;
+export default PlayerAlbumSelector;
