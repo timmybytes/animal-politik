@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { faitAccompli, simulacra, multnomah } from '../../musicData';
 import styles from './MusicPlayer.module.scss';
-import AlbumSelector from './AlbumSelector/AlbumSelector';
+import PlayerAlbumSelector from './PlayerAlbumSelector/PlayerAlbumSelector';
 import PlayerHeader from './PlayerHeader/PlayerHeader';
 import PlayerAudio from './PlayerAudio/PlayerAudio';
 import PlayerArt from './PlayerArt/PlayerArt';
@@ -12,13 +12,13 @@ const MusicPlayer = () => {
   const [currentSong, setCurrentSong] = useState({
     title: 'Quagmire',
     audio: '/music/simulacra/quagmire.mp3',
-    album: 'simulacra',
+    album: 'Simulacra',
   });
 
   return (
     <div className={styles.player}>
       {/* Select album from array */}
-      <AlbumSelector
+      <PlayerAlbumSelector
         albums={[faitAccompli, multnomah, simulacra]}
         setCurrentAlbum={setCurrentAlbum}
         currentAlbum={currentAlbum}
