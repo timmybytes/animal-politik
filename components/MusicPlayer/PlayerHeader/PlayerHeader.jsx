@@ -9,7 +9,7 @@ const PlayerHeader = ({ currentSong }) => {
         {/* Show song/album for currently playing track */}
         {currentSong.title ? 'Now Playing:' : 'No song selected'}{' '}
         <span>{currentSong.title}</span>
-        {currentSong.audio && `(${currentSong.album})`}
+        {currentSong.audio && ` (${currentSong.album})`}
       </div>
     </div>
   );
