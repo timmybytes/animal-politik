@@ -4,7 +4,7 @@ const AUDIO = '/music';
 
 export const faitAccompli = {
   albumTitle: 'Fait Accompli',
-  albumArt: `${ARTWORK}/fait-accompli-cover.jpg`,
+  albumArt: `${ARTWORK}/fait-accompli-cover-1400.webp`,
   albumYear: '2020',
   tracks: [
     {
@@ -90,7 +90,7 @@ export const faitAccompli = {
 
 export const multnomah = {
   albumTitle: 'Multnomah',
-  albumArt: `${ARTWORK}/multnomah-cover.jpg`,
+  albumArt: `${ARTWORK}/multnomah-cover-1400.webp`,
   albumYear: '2020',
   tracks: [
     {
@@ -158,7 +158,7 @@ export const multnomah = {
 
 export const simulacra = {
   albumTitle: 'Simulacra',
-  albumArt: `${ARTWORK}/simulacra-cover.jpg`,
+  albumArt: `${ARTWORK}/simulacra-cover-1400.webp`,
   albumYear: '2021',
   tracks: [
     {
