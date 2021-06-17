@@ -1,4 +1,4 @@
-import { Head } from 'next/document';
+import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
 import '@styles/globals.scss';
 
