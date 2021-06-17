@@ -1,17 +1,11 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import Link from 'next/link';
-import { slide as Menu } from 'react-burger-menu';
 import { useRouter } from 'next/router';
 import styles from './Navbar.module.scss';
-import SocialMenu from '@components/SocialMenu/SocialMenu';
+import Button from '@components/Button/Button';
 
 export default function Navbar() {
-  const router = useRouter();
-  const [active, setActive] = useState('none');
-
-  useEffect(() => {
-    setActive(router.pathname);
-  });
+  // const { toggleMenu } = useContext(MenuContext);
 
   return (
     <>
@@ -32,75 +26,23 @@ export default function Navbar() {
               </video>
             </a>
           </Link>
-          <ul>
-            <li>
-              <Link href='/'>
-                <a
-                  style={
-                    active === '/'
-                      ? {
-                          borderBottom: '2px solid #64a7f5',
-                          fontSize: '105%',
-                          transition: '.2s',
-                        }
-                      : { borderBottom: 'none' }
-                  }>
-                  Home
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/about'>
-                <a
-                  style={
-                    active === '/about'
-                      ? {
-                          borderBottom: '2px solid #64a7f5',
-                          fontSize: '105%',
-                          transition: '.2s',
-                        }
-                      : { borderBottom: 'none' }
-                  }>
-                  About
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/music'>
-                <a
-                  style={
-                    active === '/music'
-                      ? {
-                          borderBottom: '2px solid #64a7f5',
-                          fontSize: '105%',
-                          transition: '.2s',
-                        }
-                      : { borderBottom: 'none' }
-                  }>
-                  Music
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href='/contact'>
-                <a
-                  style={
-                    active === '/contact'
-                      ? {
-                          borderBottom: '2px solid #64a7f5',
-                          fontSize: '105%',
-                          transition: '.2s',
-                        }
-                      : { borderBottom: 'none' }
-                  }>
-                  Contact
-                </a>
-              </Link>
-            </li>
-          </ul>
+          <Button
+            type='tracklist__flat'
+            // onClick={toggleMenu}
+          >
+            <svg viewBox='0 0 10 8' width='40'>
+              <path
+                d='M1 1h8M1 4h 8M1 7h8'
+                stroke='rgb(59, 59, 59)'
+                stroke-width='1'
+                stroke-linecap='square'
+              />
+            </svg>
+          </Button>
+          {/* <Menu /> */}
         </nav>
       </div>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
     </>
   );
 }

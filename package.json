@@ -13,12 +13,12 @@
     "netlify-identity-widget": "^1.9.1",
     "next": "^10.2.2",
     "react": "17.0.2",
+    "react-burger-menu": "^3.0.6",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
     "sass": "^1.32.12"
   },
   "devDependencies": {
-    "classnames": "^2.2.6",
-    "react-burger-menu": "^3.0.6"
+    "classnames": "^2.2.6"
   }
 }
