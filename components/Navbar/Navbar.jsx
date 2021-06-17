@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { slide as Menu } from 'react-burger-menu';
 import { useRouter } from 'next/router';
 import styles from './Navbar.module.scss';
 import SocialMenu from '@components/SocialMenu/SocialMenu';

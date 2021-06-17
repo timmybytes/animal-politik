@@ -18,6 +18,7 @@
     "sass": "^1.32.12"
   },
   "devDependencies": {
-    "classnames": "^2.2.6"
+    "classnames": "^2.2.6",
+    "react-burger-menu": "^3.0.6"
   }
 }
