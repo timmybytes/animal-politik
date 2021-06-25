@@ -21,8 +21,6 @@ const Button = ({ type, children, value, onClick, ...props }) => {
     onClick ? onClick(e) : console.log('No click handler!');
   };
 
-  console.log(buttonClass);
-
   return (
     <button value={value} onClick={e => handleClick(e)} className={buttonClass}>
       {children}

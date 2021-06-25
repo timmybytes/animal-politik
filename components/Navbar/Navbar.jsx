@@ -1,15 +1,52 @@
-import { useEffect, useState, useContext } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/router';
-import styles from './Navbar.module.scss';
-import Button from '@components/Button/Button';
+import React, { useState } from 'react';
+import styles from './Menu.module.scss';
 
-export default function Navbar() {
-  // const { toggleMenu } = useContext(MenuContext);
+const Menu = ({ links, onClick }) => {
+  const [visible, setVisible] = useState(false);
+  const handleClick = e => {
+    setVisible(!visible);
+  };
 
   return (
+    <div className={styles.container}>
+      <button onClick={() => setVisible(!visible)}>Menu</button>
+      <div
+        className={styles.menu}
+        style={
+          !visible
+            ? {
+                display: 'none',
+              }
+            : {}
+        }>
+        {links.map(link => {
+          return (
+            <React.Fragment key={link.name}>
+              <Link href={link.url}>
+                <a onClick={() => setVisible(!visible)}>{link.name}</a>
+              </Link>
+            </React.Fragment>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+export default function Navbar() {
+  return (
     <>
-      <div className={styles.container}>
+      {/* <button onClick={() => setVisible(!visible)}>Menu</button> */}
+      <Menu
+        links={[
+          { url: '/', name: 'Home' },
+          { url: '/about', name: 'About' },
+          { url: '/music', name: 'Music' },
+          { url: '/contact', name: 'Contact' },
+        ]}
+      />
+      {/* <div className={styles.container}>
         <nav className={styles.nav}>
           <Link href='/'>
             <a>
@@ -26,22 +63,18 @@ export default function Navbar() {
               </video>
             </a>
           </Link>
-          <Button
-            type='tracklist__flat'
-            // onClick={toggleMenu}
-          >
+          <Button type='tracklist__flat' onClick={() => setVisible(!visible)}>
             <svg viewBox='0 0 10 8' width='40'>
               <path
                 d='M1 1h8M1 4h 8M1 7h8'
                 stroke='rgb(59, 59, 59)'
-                stroke-width='1'
-                stroke-linecap='square'
+                strokeWidth='1'
+                strokeLinecap='square'
               />
             </svg>
           </Button>
-          {/* <Menu /> */}
         </nav>
-      </div>
+      </div> */}
       {/* <SocialMenu /> */}
     </>
   );

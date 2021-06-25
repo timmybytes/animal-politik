@@ -1,12 +1,12 @@
-import React, { useState, useEffect, useContext } from 'react';
-import Link from 'next/link';
-import { useRouter } from 'next/router';
 import Button from '@components/Button/Button';
 import SocialMenu from '@components/SocialMenu/SocialMenu';
-import styles from './Navbar.module.scss';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 import { slide as MenuContainer } from 'react-burger-menu';
+import styles from './Navbar.module.scss';
 
-const Menu = () => {
+const Menu = ({ visible, onChange }) => {
   const router = useRouter();
   const [active, setActive] = useState('none');
 
@@ -14,9 +14,13 @@ const Menu = () => {
     setActive(router.pathname);
   });
 
+  const handleChange = e => {
+    onChange(!visible);
+  };
+
   return (
-    <MenuContainer isOpen>
-      <Button type='tracklist__flat' onClick={closeMenu}>
+    <MenuContainer isOpen={visible}>
+      <Button type='tracklist__flat' onClick={handleChange}>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -27,7 +31,7 @@ const Menu = () => {
         </svg>
       </Button>
       <ul className={styles.menu}>
-        <li onClick={closeMenu}>
+        <li onClick={handleChange}>
           <Link href='/'>
             <a
               style={
@@ -43,7 +47,7 @@ const Menu = () => {
             </a>
           </Link>
         </li>
-        <li onClick={closeMenu}>
+        <li onClick={handleChange}>
           <Link href='/about'>
             <a
               style={
@@ -59,7 +63,7 @@ const Menu = () => {
             </a>
           </Link>
         </li>
-        <li onClick={closeMenu}>
+        <li onClick={handleChange}>
           <Link href='/music'>
             <a
               style={
@@ -75,7 +79,7 @@ const Menu = () => {
             </a>
           </Link>
         </li>
-        <li onClick={closeMenu}>
+        <li onClick={handleChange}>
           <Link href='/contact'>
             <a
               style={
@@ -92,7 +96,7 @@ const Menu = () => {
           </Link>
         </li>
       </ul>
-      <SocialMenu />
+      {/* <SocialMenu /> */}
     </MenuContainer>
   );
 };
