@@ -1,6 +1,10 @@
 @use 'colors' as *;
 
 .container {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
   button {
     background: $primary-red;
     border-radius: 6px;
@@ -27,7 +31,7 @@
   height: 100vh;
   overflow: hidden;
   padding: 1rem;
-  position: fixed;
+  // position: fixed;
   background: $light;
   opacity: 0.95;
   font-size: 2rem;
