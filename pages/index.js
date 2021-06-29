@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import Button from '@components/Button/Button';
 import styles from '@styles/Home.module.scss';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
           <a>send them a note.</a>
         </Link>
       </p>
+      <Link href='/music'>
+        <Button type='primary'>
+          <a>Listen now</a>
+        </Button>
+      </Link>
     </div>
   );
 }
