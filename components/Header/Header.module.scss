@@ -7,6 +7,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background: $light;
+  box-shadow: 2px 2px 10px 0px $dark;
+  a:hover {
+    border-bottom: none;
+  }
   .logo {
     display: block;
     max-height: 100px;

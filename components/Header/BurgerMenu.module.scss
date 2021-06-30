@@ -1,0 +1,49 @@
+@use 'colors' as *;
+
+.burgerMenu {
+  // button resets
+  button {
+    outline: none;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  .burgerIcon {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    path {
+      fill: $dark;
+    }
+  }
+  .menu {
+    background: $light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    padding: 1rem;
+    max-width: 550px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: 2s;
+    .closeIcon {
+      align-self: flex-end;
+      svg {
+        width: 28px;
+        height: 28px;
+      }
+    }
+  }
+  .links {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      font-size: 2.5rem;
+    }
+  }
+}
