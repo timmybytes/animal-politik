@@ -12,7 +12,6 @@
   justify-content: space-between;
   font-weight: 400;
   letter-spacing: -1px;
-
   text-transform: uppercase;
   @media screen and (max-width: 940px) {
     flex-direction: column;
@@ -37,6 +36,7 @@
     list-style-type: none;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
 
     li {
       display: inline-block;

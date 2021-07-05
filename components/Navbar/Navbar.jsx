@@ -1,8 +1,8 @@
-import { useEffect, useState } from 'react';
+import SocialMenu from '@components/SocialMenu/SocialMenu';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import styles from './Navbar.module.scss';
-import SocialMenu from '@components/SocialMenu/SocialMenu';
 
 export default function Navbar() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function Navbar() {
         <nav className={styles.nav}>
           <Link href='/'>
             <a>
-              <video
+              {/* <video
                 className={styles.logo}
                 autoPlay
                 loop
@@ -28,7 +28,12 @@ export default function Navbar() {
                 poster='/graphics/SkinnyRedVector.svg'>
                 <source src='/graphics/glitchLogo.webm' type='video/webm' />
                 <source src='/graphics/glitchLogo.mp4' type='video/mp4' />
-              </video>
+              </video> */}
+              <img
+                className={styles.logo}
+                src='/graphics/SkinnyRedVector.svg'
+                alt='Animal Politik logo'
+              />
             </a>
           </Link>
           <ul>
@@ -93,6 +98,22 @@ export default function Navbar() {
                       : { borderBottom: 'none' }
                   }>
                   Contact
+                </a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/store'>
+                <a
+                  style={
+                    active === '/store'
+                      ? {
+                          borderBottom: '2px solid #64a7f5',
+                          fontSize: '105%',
+                          transition: '.2s',
+                        }
+                      : { borderBottom: 'none' }
+                  }>
+                  Store
                 </a>
               </Link>
             </li>
