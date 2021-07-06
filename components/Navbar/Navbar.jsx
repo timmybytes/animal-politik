@@ -108,8 +108,8 @@ export default function Navbar() {
             </li>
           </ul>
         </nav>
+        <SocialMenu />
       </div>
-      <SocialMenu />
     </>
   );
 }

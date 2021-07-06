@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import styles from './SocialMenu.module.scss';
 import {
   SiApplemusic,

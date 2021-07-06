@@ -51,7 +51,7 @@
     width: 90%;
     &__columnOne {
       border-radius: 4px;
-      box-shadow: 1px 1px 2.5px 0 $dark inset;
+      box-shadow: 1px 1px 2.5px 0 $light-gray inset;
       grid-area: top;
       overflow: scroll;
     }

@@ -29,13 +29,12 @@ This is a site for the band Animal Politik, built to replace their
 ### Dependencies
 
 The site is built with [Next.js](https://nextjs.org/),
-[Framer Motion](https://www.framer.com/motion/),
 [react-icons](https://react-icons.github.io/react-icons),
 [SCSS Modules](https://github.com/css-modules/css-modules), and deployed through
 [Netlify](https://www.netlify.com/).
 
 Social media icons on the site use [tippy.js](https://atomiks.github.io/tippyjs)
-for beautiful animated tooltips.
+for animated tooltips.
 
 ## License
 
