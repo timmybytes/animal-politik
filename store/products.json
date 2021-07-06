@@ -2,16 +2,16 @@
 {
   "title": "Stacked Logo Stickers",
   "id": "000-00-0001",
-  "description": "A square sticker.",
-  "images": ["/mockups/stickers/kiss-cut-stickers-3x3-default-60e261dad6a3d.png", "/mockups/stickers/kiss-cut-stickers-4x4-default-60e261dad6ac3.png", "/mockups/stickers/kiss-cut-stickers-5.5x5.5-default-60e261dad6afa.png"],
+  "description": "A square sticker, available in 3\", 4\", or 5.5\".",
+  "images": ["/mockups/stickers/kiss-cut-stickers-3x3.webp", "/mockups/stickers/kiss-cut-stickers-4x4.webp", "/mockups/stickers/kiss-cut-stickers-5.5x5.5.webp"],
   "price": "3.00 - 5.00",
   "tags": ["stickers"]
 },
 {
   "title": "Stacked Logo Unisex Eco Tee",
   "id": "000-00-0002",
-  "description": "Made from organic cotton and recycled poly rPET blend that makes the fabric more durable.",
-  "images": ["/mockups/unisex-eco-tee/unisex-eco-tee-black-front-60e2626caa7dd.png", "/mockups/unisex-eco-tee/unisex-eco-tee-black-front-60e2626caa8ae.png", "/mockups/unisex-eco-tee/unisex-eco-tee-black-front-60e2626caa544.png", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-60e2626caa923.png", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-60e2626caaa11.png", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-60e2626caaad4.png"],
+  "description": "Made from organic cotton and recycled poly rPET blend that makes the fabric more durable, show your support with this eco-friendly tee.",
+  "images": ["/mockups/unisex-eco-tee/unisex-eco-tee-black-front-1.webp", "/mockups/unisex-eco-tee/unisex-eco-tee-black-front-2.webp", "/mockups/unisex-eco-tee/unisex-eco-tee-black-front-3.webp", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-1.webp", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-2.webp", "/mockups/unisex-eco-tee/unisex-eco-tee-white-front-3.webp"],
   "price": "25.00",
   "tags": ["apparel"]
 },
@@ -19,7 +19,7 @@
   "title": "Stacked Logo Unisex V-Neck Tee",
   "id": "000-00-0003",
   "description": "A classic, 100% cotton v-neck tee.",
-  "images": ["/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-60e262b108a7b.png"],
+  "images": ["/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-1.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-2.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-3.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-1.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-2.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-3.webp"],
   "price": "25.00",
   "tags": ["apparel", "shirts"]
 }
