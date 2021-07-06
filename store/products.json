@@ -16,16 +16,8 @@
   "tags": ["apparel"]
 },
 {
-  "title": "Stacked Logo Stickers",
-  "id": "000-00-0001",
-  "description": "A square sticker.",
-  "images": ["/mockups/stickers/kiss-cut-stickers-3x3-default-60e261dad6a3d.png", "/mockups/stickers/kiss-cut-stickers-4x4-default-60e261dad6ac3.png", "/mockups/stickers/kiss-cut-stickers-5.5x5.5-default-60e261dad6afa.png"],
-  "price": "3.00 - 5.00",
-  "tags": ["stickers"]
-},
-{
   "title": "Stacked Logo Unisex V-Neck Tee",
-  "id": "000-00-0002",
+  "id": "000-00-0003",
   "description": "A classic, 100% cotton v-neck tee.",
   "images": ["/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-60e262b108a7b.png"],
   "price": "25.00",
