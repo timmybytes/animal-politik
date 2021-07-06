@@ -18,20 +18,9 @@ export default function Navbar() {
         <nav className={styles.nav}>
           <Link href='/'>
             <a>
-              {/* <video
-                className={styles.logo}
-                autoPlay
-                loop
-                muted
-                playsInline
-                // !IMPORTANT - 'poster' attr acts as fallback logo image for browsers blocking video
-                poster='/graphics/SkinnyRedVector.svg'>
-                <source src='/graphics/glitchLogo.webm' type='video/webm' />
-                <source src='/graphics/glitchLogo.mp4' type='video/mp4' />
-              </video> */}
               <img
                 className={styles.logo}
-                src='/graphics/SkinnyRedVector.svg'
+                src='/graphics/Logo.svg'
                 alt='Animal Politik logo'
               />
             </a>

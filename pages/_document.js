@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -37,7 +37,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OG_Image.png'
+            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OpenGraphLogo.png'
             key='og-img'
           />
           <meta
@@ -59,7 +59,7 @@ class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OG_Image.png'
+            content='https://raw.githubusercontent.com/timmybytes/animal-politik-nextjs/main/public/graphics/OpenGraphLogo.png'
             key='twitter-img'
           />
           <meta

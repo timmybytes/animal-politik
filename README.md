@@ -1,5 +1,5 @@
 <h1 align='center'>
-  <img src='/public/graphics/SkinnyRedVector.svg' />
+  <img src='/public/graphics/Logo.svg' />
 </h1>
 
 <div align="center">
@@ -16,8 +16,6 @@
 <p align="center">
   <sub>Built with 🎵 by Timothy Merritt
 </div>
-
-<img align='center' src='/public/screenshot-home.jpg' alt='screenshot of Animal Politik homepage' />
 
 This is a site for the band Animal Politik, built to replace their
 [current Wordpress site](https://animalpolitik.org).

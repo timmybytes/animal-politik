@@ -21,6 +21,6 @@
   "description": "A classic, 100% cotton v-neck tee.",
   "images": ["/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-1.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-2.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-black-front-3.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-1.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-2.webp", "/mockups/unisex-v-neck-tee/unisex-v-neck-tee-white-front-3.webp"],
   "price": "25.00",
-  "tags": ["apparel", "shirts"]
+  "tags": ["apparel"]
 }
 ]

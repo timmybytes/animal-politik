@@ -1,0 +1,75 @@
+@use 'colors' as *;
+
+.productPreview {
+  background: $light;
+  border-radius: 4px;
+  border: 1px solid $light-gray;
+  box-shadow: 4px 4px 10px 0 $light-gray;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: 80%;
+  left: 10%;
+  overflow: hidden;
+  padding: 1rem;
+  position: fixed;
+  top: 10%;
+  width: 80%;
+  &__columnOne {
+    display: grid;
+    gap: 10px;
+    grid-column: 1/2;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    overflow-y: scroll;
+    overflow: hidden;
+    padding: 1rem;
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+  }
+  &__columnTwo {
+    align-items: flex-end;
+    border-left: 1px solid $dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    grid-column: 2/3;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 900px) {
+    display: grid;
+    grid-template-areas:
+      'top top top'
+      'bottom bottom bottom'
+      'bottom bottom bottom';
+    grid-auto-rows: minmax(100px, auto);
+    height: 90%;
+    left: 5%;
+    overflow: visible;
+    top: 5%;
+    width: 90%;
+    &__columnOne {
+      border-radius: 4px;
+      box-shadow: 1px 1px 2.5px 0 $dark inset;
+      grid-area: top;
+      overflow: scroll;
+    }
+    &__columnTwo {
+      overflow: scroll;
+      border-left: none;
+      grid-area: bottom;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      line-height: 1.2em;
+      * {
+        margin: 0;
+      }
+      h3,
+      p {
+        padding: 5px 0;
+      }
+    }
+  }
+}

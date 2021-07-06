@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
 import styles from '@styles/Contact.module.scss';
+import React from 'react';
 
-const Music = () => {
+const Contact = () => {
   return (
     <section className={styles.contact}>
       <h1 className='page_title'>Contact</h1>
@@ -36,4 +36,4 @@ const Music = () => {
   );
 };
 
-export default Music;
+export default Contact;

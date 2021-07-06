@@ -1,0 +1,56 @@
+@use 'colors' as *;
+
+.product {
+  background: $light;
+  border-radius: 4px;
+  border: 2px solid $light-gray;
+  box-shadow: 4px 4px 10px 0 $light-gray;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 200px;
+  min-width: 150px;
+  width: 100%;
+  &Info {
+    align-content: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    height: 100%;
+    justify-content: space-between;
+    padding: 1rem;
+    & * {
+      margin: 0;
+    }
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    img {
+      display: block;
+      height: auto;
+      width: 100%;
+    }
+    // Description
+    p:first-of-type {
+      color: $gray;
+      font-size: 0.85rem;
+      line-height: 1.4em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      /* number of lines to show */
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    // Price
+    p:nth-of-type(2) {
+      font-weight: 600;
+    }
+    // Tags
+    p:nth-of-type(3) {
+      font-size: 0.75rem;
+    }
+  }
+}
